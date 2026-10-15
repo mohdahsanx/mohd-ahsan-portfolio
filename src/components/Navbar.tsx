@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { FileDown, Menu, X, ArrowUpRight, Eye, Sun, Moon } from 'lucide-react';
+import { Menu, X, ArrowUpRight, FileDown, Eye } from 'lucide-react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Theme } from '../utils/theme';
 
 interface NavbarProps {
   onOpenCvModal: () => void;
-  theme: Theme;
-  onToggleTheme: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ onOpenCvModal, theme, onToggleTheme }) => {
+export const Navbar: React.FC<NavbarProps> = ({ onOpenCvModal }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
@@ -96,59 +93,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenCvModal, theme, onToggleTh
             })}
           </nav>
 
-          {/* Action CTAs */}
-          <div className="hidden sm:flex items-center space-x-2.5">
-            {/* Theme Toggle Button */}
-            <button
-              onClick={onToggleTheme}
-              className="p-1.5 rounded-md text-navy-700 dark:text-navy-300 hover:bg-canvas-muted dark:hover:bg-navy-800 border border-canvas-border dark:border-navy-700 transition-colors focus:outline-none focus:ring-2 focus:ring-bronze-500"
-              aria-label={theme === 'dark' ? "Switch to light mode" : "Switch to dark mode"}
-              title={theme === 'dark' ? "Switch to light mode" : "Switch to dark mode"}
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-bronze-400" /> : <Moon className="w-4 h-4 text-navy-700" />}
-            </button>
-
-            {/* View/Preview CV button */}
-            <button
-              onClick={onOpenCvModal}
-              className="inline-flex items-center space-x-1.5 px-3 py-1.5 text-xs font-semibold text-navy-800 dark:text-navy-200 bg-canvas-muted dark:bg-navy-800 hover:bg-canvas-border/80 dark:hover:bg-navy-700 border border-canvas-border dark:border-navy-700 rounded-md transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-bronze-500"
-              title="Preview CV Document"
-            >
-              <Eye className="w-3.5 h-3.5 text-navy-600 dark:text-navy-300" />
-              <span>Preview CV</span>
-            </button>
-
-            {/* Direct Download CV Link */}
-            <a
-              href={PERSONAL_INFO.cvDownloadPath}
-              download="Mohd_Ahsan_Siddiqui_CV.pdf"
-              className="inline-flex items-center space-x-1.5 px-3.5 py-1.5 text-xs font-semibold text-white bg-navy-950 hover:bg-navy-800 dark:bg-bronze-600 dark:hover:bg-bronze-700 rounded-md transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-bronze-500"
-            >
-              <FileDown className="w-3.5 h-3.5 text-bronze-300 dark:text-white" />
-              <span>Download CV</span>
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <div className="flex sm:hidden items-center space-x-2">
-            <button
-              onClick={onToggleTheme}
-              className="p-1.5 text-navy-700 dark:text-navy-300 bg-canvas-muted dark:bg-navy-800 border border-canvas-border dark:border-navy-700 rounded-md"
-              aria-label="Toggle theme"
-            >
-              {theme === 'dark' ? <Sun className="w-4 h-4 text-bronze-400" /> : <Moon className="w-4 h-4 text-navy-700" />}
-            </button>
-            <button
-              onClick={onOpenCvModal}
-              className="p-1.5 text-navy-700 dark:text-navy-300 bg-canvas-muted dark:bg-navy-800 border border-canvas-border dark:border-navy-700 rounded-md text-xs font-semibold flex items-center space-x-1"
-              aria-label="View CV"
-            >
-              <Eye className="w-3.5 h-3.5" />
-              <span className="text-[11px]">CV</span>
-            </button>
+          {/* Mobile Menu Toggle Button */}
+          <div className="flex lg:hidden items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 rounded-md text-navy-800 dark:text-navy-200 hover:text-navy-950 hover:bg-canvas-muted dark:hover:bg-navy-800 border border-canvas-border dark:border-navy-700 focus:outline-none focus:ring-2 focus:ring-bronze-500"
+              className="p-2 rounded-md text-navy-800 hover:text-navy-950 hover:bg-canvas-muted border border-canvas-border focus:outline-none focus:ring-2 focus:ring-bronze-500"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
             >
