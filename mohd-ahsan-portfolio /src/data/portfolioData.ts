@@ -3,7 +3,7 @@ import { InternshipExperience, Achievement, ResearchProject, LeadershipRole, Ski
 export const PERSONAL_INFO = {
   name: "Mohd Ahsan Siddiqui",
   title: "Third-year B.Sc. (Data Science) LL.B. Student",
-  institution: "National Law University Meghalaya",
+  institution: "National Law University of Meghalaya",
   academicPeriod: "2024–2029",
   gpa: "8.25/10",
   gpaPeriod: "End of Sixth Trimester",
@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   schoolClass12: "89.5% (AISSCE)",
   schoolClass10: "83.2% (ICSE)",
   headline: "Law, Technology & the Future of Digital Business.",
-  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
+  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University of Meghalaya, exploring the pages and codes of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
   email: "ahsan@nlumeg.ac.in",
   phone: "+91 95806 30047",
   phoneRaw: "+919580630047",
@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
 export const CREDIBILITY_ITEMS = [
   {
     label: "Education",
-    value: "National Law University Meghalaya",
+    value: "National Law University of Meghalaya",
     detail: "B.Sc. (Data Science) LL.B. (2024–2029)"
   },
   {
@@ -39,13 +39,18 @@ export const CREDIBILITY_ITEMS = [
   {
     label: "Advocacy & Research",
     value: "2nd Position Intra Moot",
-    detail: "CLST IIT Guwahati & NLU Meghalaya"
+    detail: "NLU Meghalaya"
+  },
+{
+    label: "Social Work",
+    value: "Core Founding Member of IDIA Meghalaya Chapter",
+    detail: "IDIA - Increasing Diversity, Increasing Awareness"
   }
 ];
 
 export const ABOUT_PARAGRAPHS = [
   "I am a third-year law student with an enduring curiosity for exploring the evolving frontiers of legal systems. While I am particularly drawn to Intellectual Property, Technology Law, Data Privacy, and Corporate Law, I believe that high-calibre legal thinking requires an interdisciplinary mindset that refuses to be confined to silos.",
-  "Pursuing a dual B.Sc. (Data Science) LL.B. degree at National Law University Meghalaya enables me to combine rigorous legal doctrine with quantitative fluency. I enjoy learning through hands-on legal research, deep institutional discourse, practical chamber and transactional internships, and thoughtful experimentation with modern AI-assisted workflows.",
+  "Pursuing a dual B.Sc. (Data Science) LL.B. degree at National Law University of Meghalaya enables me to combine rigorous legal doctrine with quantitative fluency. I enjoy learning through hands-on legal research, deep institutional discourse, practical chamber and transactional internships, and thoughtful experimentation with modern AI-assisted workflows.",
   "For me, efficiency and adaptability go hand in hand with professional growth. Whether conducting due diligence for corporate restructurings, cross-border trademark clearance under the UK Trade Marks Act, auditing large-scale litigation dockets, or assisting ongoing research at IIT Guwahati, my focus remains constant: delivering thorough, principled work that bridges technology and the law."
 ];
 
