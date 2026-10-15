@@ -139,7 +139,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
                     <ShieldCheck className="w-4 h-4 text-bronze-700" />
                   </div>
                   <div>
-                    <span className="font-semibold text-navy-900 block">IP & Data Privacy</span>
+                    <span className="font-semibold text-navy-900 block">IP, Technology Law & Privacy</span>
                     <span className="text-navy-600 text-[11px]">DPDP, GDPR, Madrid Protocol, and cross-border trademark clearance.</span>
                   </div>
                 </div>

@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   schoolClass12: "89.5% (AISSCE)",
   schoolClass10: "83.2% (ICSE)",
   headline: "Law, Technology & the Future of Digital Business.",
-  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
+  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
   email: "ahsan@nlumeg.ac.in",
   linkedInUrl: "https://www.linkedin.com/in/mohd-ahsan-682949223/",
   location: "Shillong, Meghalaya / New Delhi / Lucknow",
@@ -42,7 +42,7 @@ export const CREDIBILITY_ITEMS = [
 ];
 
 export const ABOUT_PARAGRAPHS = [
-  "I am a third-year law student with an enduring curiosity for exploring the evolving frontiers of legal systems. While I am particularly drawn to Intellectual Property, Data Privacy, and Corporate Law, I believe that high-calibre legal thinking requires an interdisciplinary mindset that refuses to be confined to silos.",
+  "I am a third-year law student with an enduring curiosity for exploring the evolving frontiers of legal systems. While I am particularly drawn to Intellectual Property, Technology Law, Data Privacy, and Corporate Law, I believe that high-calibre legal thinking requires an interdisciplinary mindset that refuses to be confined to silos.",
   "Pursuing a dual B.Sc. (Data Science) LL.B. degree at National Law University Meghalaya enables me to combine rigorous legal doctrine with quantitative fluency. I enjoy learning through hands-on legal research, deep institutional discourse, practical chamber and transactional internships, and thoughtful experimentation with modern AI-assisted workflows.",
   "For me, efficiency and adaptability go hand in hand with professional growth. Whether conducting due diligence for corporate restructurings, cross-border trademark clearance under the UK Trade Marks Act, auditing large-scale litigation dockets, or assisting ongoing research at IIT Guwahati, my focus remains constant: delivering thorough, principled work that bridges technology and the law."
 ];
