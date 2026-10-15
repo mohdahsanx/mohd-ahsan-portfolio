@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { Mail, Copy, Check, ArrowUpRight, Send, ShieldAlert, Sparkles } from 'lucide-react';
+import { Mail, Copy, Check, ArrowUpRight, Send, Sparkles, Phone, Eye, EyeOff } from 'lucide-react';
 import { LinkedInIcon } from './Icons';
 import { PERSONAL_INFO } from '../data/portfolioData';
 
 export const Contact: React.FC = () => {
   const [copied, setCopied] = useState(false);
+  const [isPhoneRevealed, setIsPhoneRevealed] = useState(false);
+  const [phoneCopied, setPhoneCopied] = useState(false);
   const [inquiryType, setInquiryType] = useState('Recruitment & Internship');
   const [customSubject, setCustomSubject] = useState('');
   const [customMessage, setCustomMessage] = useState('');
@@ -13,6 +15,13 @@ export const Contact: React.FC = () => {
     navigator.clipboard.writeText(PERSONAL_INFO.email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
+  };
+
+  const handleCopyPhone = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    navigator.clipboard.writeText(PERSONAL_INFO.phoneRaw || "+919580630047");
+    setPhoneCopied(true);
+    setTimeout(() => setPhoneCopied(false), 2500);
   };
 
   const mailtoHref = `mailto:${PERSONAL_INFO.email}?subject=${encodeURIComponent(
@@ -125,12 +134,101 @@ export const Contact: React.FC = () => {
               </a>
             </div>
 
-            {/* Privacy & Phone Notice as required */}
-            <div className="p-4 bg-canvas-muted/60 rounded-lg border border-canvas-border text-xs text-navy-600 flex items-start space-x-2.5">
-              <ShieldAlert className="w-4 h-4 text-bronze-700 flex-shrink-0 mt-0.5" />
-              <p className="leading-relaxed">
-                <strong className="text-navy-900 font-medium">Privacy Notice:</strong> Direct telephone contact is omitted from public display to protect against spam. Official contact numbers are provided within formal CV documentation and upon reciprocal request for recruitment verifications.
-              </p>
+            {/* Direct Telephone / WhatsApp (Click-to-reveal protected against scrapers) */}
+            <div className="bg-white rounded-xl border border-canvas-border p-6 shadow-card space-y-4">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-wider text-bronze-700">
+                  Telephone & WhatsApp
+                </span>
+                <span className="text-[11px] text-navy-500 font-mono">
+                  {isPhoneRevealed ? "Verified Contact" : "Protected"}
+                </span>
+              </div>
+
+              <div className="space-y-2">
+                <p className="text-xs text-navy-500">
+                  Direct telephone contact for recruitment and professional verifications:
+                </p>
+
+                {/* Click to reveal interactive card */}
+                <button
+                  type="button"
+                  onClick={() => setIsPhoneRevealed(!isPhoneRevealed)}
+                  className="w-full text-left p-3.5 rounded-lg bg-canvas-muted hover:bg-canvas-border/60 border border-canvas-border transition-all flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                  aria-expanded={isPhoneRevealed}
+                  title={isPhoneRevealed ? "Click to conceal phone number" : "Click to reveal phone number"}
+                >
+                  <div className="flex items-center space-x-3">
+                    <div className="p-2 bg-white rounded-md border border-canvas-border text-bronze-700">
+                      <Phone className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <p className={`font-mono text-base font-bold text-navy-950 transition-all select-all tracking-wider ${
+                        isPhoneRevealed ? 'filter-none' : 'blur-sm select-none'
+                      }`}>
+                        +91 95806 30047
+                      </p>
+                      <p className="text-[11px] text-navy-500">
+                        {isPhoneRevealed ? "Click to conceal" : "Click to unblur & display"}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-1 text-xs font-semibold text-bronze-700 group-hover:text-bronze-800">
+                    {isPhoneRevealed ? (
+                      <>
+                        <EyeOff className="w-4 h-4 text-navy-500" />
+                        <span className="text-[11px] text-navy-500">Hide</span>
+                      </>
+                    ) : (
+                      <>
+                        <Eye className="w-4 h-4" />
+                        <span className="text-[11px]">Reveal</span>
+                      </>
+                    )}
+                  </div>
+                </button>
+              </div>
+
+              {/* Action buttons revealed on click */}
+              {isPhoneRevealed && (
+                <div className="pt-1 grid grid-cols-3 gap-2 animate-in fade-in duration-150">
+                  <a
+                    href="tel:+919580630047"
+                    className="inline-flex items-center justify-center space-x-1.5 px-3 py-2 rounded-md text-xs font-semibold text-white bg-navy-950 hover:bg-navy-800 transition-colors shadow-sm"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-bronze-300" />
+                    <span>Call</span>
+                  </a>
+
+                  <a
+                    href="https://wa.me/919580630047"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center space-x-1 px-3 py-2 rounded-md text-xs font-semibold text-emerald-800 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 transition-colors"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+
+                  <button
+                    onClick={handleCopyPhone}
+                    className="inline-flex items-center justify-center space-x-1 px-3 py-2 rounded-md text-xs font-semibold text-navy-800 bg-canvas-muted hover:bg-canvas-border border border-canvas-border transition-colors"
+                    title="Copy phone number to clipboard"
+                  >
+                    {phoneCopied ? (
+                      <>
+                        <Check className="w-3.5 h-3.5 text-emerald-600" />
+                        <span className="text-emerald-700">Copied</span>
+                      </>
+                    ) : (
+                      <>
+                        <Copy className="w-3.5 h-3.5 text-navy-600" />
+                        <span>Copy</span>
+                      </>
+                    )}
+                  </button>
+                </div>
+              )}
             </div>
 
           </div>

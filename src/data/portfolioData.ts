@@ -13,6 +13,8 @@ export const PERSONAL_INFO = {
   headline: "Law, Technology & the Future of Digital Business.",
   shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
   email: "ahsan@nlumeg.ac.in",
+  phone: "+91 95806 30047",
+  phoneRaw: "+919580630047",
   linkedInUrl: "https://www.linkedin.com/in/mohd-ahsan-682949223/",
   location: "Shillong, Meghalaya / New Delhi / Lucknow",
   cvDownloadPath: "/documents/mohd-ahsan-siddiqui-cv.pdf",
