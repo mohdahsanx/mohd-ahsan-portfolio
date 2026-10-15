@@ -12,9 +12,11 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CvModal } from './components/CvModal';
 import { initGA } from './utils/analytics';
+import { useTheme } from './utils/theme';
 
 export const App: React.FC = () => {
   const [isCvModalOpen, setIsCvModalOpen] = useState(false);
+  const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
     initGA();
@@ -23,7 +25,11 @@ export const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-canvas text-navy-900 selection:bg-bronze-100 selection:text-navy-950 flex flex-col font-sans">
       {/* Top Sticky Navigation */}
-      <Navbar onOpenCvModal={() => setIsCvModalOpen(true)} />
+      <Navbar
+        onOpenCvModal={() => setIsCvModalOpen(true)}
+        theme={theme}
+        onToggleTheme={toggleTheme}
+      />
 
       {/* Main Content Landmark */}
       <main id="main-content" className="flex-1 focus:outline-none">
