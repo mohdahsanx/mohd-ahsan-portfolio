@@ -102,16 +102,16 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Modal Scrollable CV Document View */}
-        <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-canvas-muted/40 font-sans">
+        <div className="flex-1 overflow-y-auto p-4 sm:p-8 bg-canvas-muted/40 font-['Times_New_Roman',_Times,_serif]">
           
-          <div className="max-w-3xl mx-auto bg-white rounded-lg border border-canvas-border shadow-card p-6 sm:p-10 space-y-6 text-navy-900 print-page">
+          <div className="max-w-3xl mx-auto bg-white rounded-lg border border-canvas-border shadow-card p-6 sm:p-10 space-y-6 text-navy-900 print-page font-['Times_New_Roman',_Times,_serif]">
             
             {/* Document Header */}
-            <div className="text-center pb-5 border-b border-canvas-border space-y-1.5">
-              <h1 className="text-2xl sm:text-3xl font-serif font-bold text-navy-950 tracking-wide uppercase">
+            <div className="text-center pb-5 border-b border-canvas-border space-y-1.5 font-['Times_New_Roman',_Times,_serif]">
+              <h1 className="text-2xl sm:text-3xl font-bold text-navy-950 tracking-wide uppercase font-['Times_New_Roman',_Times,_serif]">
                 MOHD AHSAN SIDDIQUI
               </h1>
-              <p className="text-xs sm:text-sm text-navy-700 font-mono">
+              <p className="text-xs sm:text-sm text-navy-700 font-['Times_New_Roman',_Times,_serif]">
                 [+91-95806 30047] &nbsp;|&nbsp; 
                 <a href={PERSONAL_INFO.linkedInUrl} target="_blank" rel="noopener noreferrer" className="text-navy-900 hover:text-bronze-700 font-semibold underline underline-offset-2 ml-1">
                   LinkedIn
