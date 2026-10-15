@@ -39,7 +39,7 @@ export const CREDIBILITY_ITEMS = [
   {
     label: "Advocacy & Research",
     value: "2nd Position Intra Moot",
-    detail: "CLST IIT Guwahati & NLU Meghalaya"
+    detail: "National Law University Meghalaya"
   }
 ];
 
