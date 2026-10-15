@@ -154,9 +154,9 @@ export const ACHIEVEMENTS: Achievement[] = [
     year: "2026",
     rank: "podium",
     rankLabel: "University 2nd Position",
-    projectOrMatter: "Appellate Advocacy & Oral Submissions",
-    description: "Secured second place in the premier university moot court competition, demonstrating advanced oral arguments, procedural precision, and comprehensive memorial drafting evaluated by a bench of senior academics and advocates.",
-    tags: ["Moot Court", "Oral Arguments", "Appellate Memorial", "Procedural Law"]
+    projectOrMatter: "Constitutional Law, Election Laws & Fundamental Rights",
+    description: "Secured second place in the premier university moot court competition. Drafted appellate memorials addressing complex constitutional and election law questions centered on fundamental rights violations, and prepared exhaustive judicial compendiums for courtroom reference and bench submissions.",
+    tags: ["Constitutional Law", "Election Laws", "Fundamental Rights", "Memorial Drafting", "Compendiums", "Appellate Advocacy"]
   },
   {
     id: "ambedkar-moot-2026",

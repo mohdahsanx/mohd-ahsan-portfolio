@@ -74,7 +74,7 @@ export const Achievements: React.FC = () => {
                   <div className="p-3 bg-canvas-muted rounded-lg border border-canvas-border/80 mb-4">
                     <div className="flex items-center space-x-1.5 text-xs font-semibold text-navy-900 mb-1">
                       <ScrollText className="w-3.5 h-3.5 text-bronze-700" />
-                      <span>Drafting Bill / Focus:</span>
+                      <span>{item.id === 'gnlu-leg-drafting-2025' ? 'Drafted Bill & Subject:' : 'Moot Proposition & Focus:'}</span>
                     </div>
                     <p className="text-xs font-serif italic text-navy-800">
                       “{item.projectOrMatter}”
