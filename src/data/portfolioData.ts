@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   schoolClass12: "89.5% (AISSCE)",
   schoolClass10: "83.2% (ICSE)",
   headline: "Law, Technology & the Future of Digital Business.",
-  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. My interests span intellectual property, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
+  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
   email: "ahsan@nlumeg.ac.in",
   linkedInUrl: "https://www.linkedin.com/in/mohd-ahsan-682949223/",
   location: "Shillong, Meghalaya / New Delhi / Lucknow",
