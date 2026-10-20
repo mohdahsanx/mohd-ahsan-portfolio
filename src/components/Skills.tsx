@@ -84,7 +84,7 @@ export const Skills: React.FC = () => {
               <span>Computational Data Science & Legal Analytics</span>
             </h4>
             <p className="text-xs text-navy-600 max-w-2xl leading-relaxed">
-              Trained at National Law University Meghalaya to apply quantitative methodologies, data structuring, and computational models to legal problems, statutory interpretation, and commercial due diligence.
+              Trained at National Law University of Meghalaya to apply quantitative methodologies, data structuring, and computational models to legal problems, statutory interpretation, and commercial due diligence.
             </p>
           </div>
           <span className="text-xs font-mono font-bold px-3 py-1.5 rounded bg-bronze-50 text-bronze-800 border border-bronze-200 whitespace-nowrap">

@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenCvModal }) => {
                 B.Sc. (Data Science) LL.B. (Hons.) Candidate &middot; Class of 2029
               </p>
               <p className="text-xs text-bronze-700 font-medium">
-                National Law University Meghalaya, India
+                National Law University of Meghalaya, India
               </p>
             </div>
             <p className="text-xs text-navy-500 max-w-sm leading-relaxed pt-1">

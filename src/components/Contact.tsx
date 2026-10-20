@@ -69,7 +69,7 @@ export const Contact: React.FC = () => {
                   {PERSONAL_INFO.email}
                 </p>
                 <p className="text-xs text-navy-500">
-                  National Law University Meghalaya student address
+                  National Law University of Meghalaya student address
                 </p>
               </div>
 

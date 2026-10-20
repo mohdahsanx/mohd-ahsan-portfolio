@@ -117,7 +117,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenCvModal }) => {
                     Candidate for B.Sc. (Data Science) LL.B.
                   </p>
                   <p className="text-[11px] text-navy-500">
-                    National Law University Meghalaya
+                    National Law University of Meghalaya
                   </p>
                 </div>
               </div>

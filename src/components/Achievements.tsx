@@ -156,44 +156,46 @@ export const Achievements: React.FC = () => {
             <div className="flex items-center space-x-2">
               <Scale className="w-4 h-4 text-navy-600" />
               <h3 className="text-xs font-bold uppercase tracking-wider text-navy-700">
-                National Moot Court Participation
+                National Moot Court Participation & Research
               </h3>
             </div>
             <span className="text-xs font-medium text-navy-500 bg-canvas-muted px-2.5 py-0.5 rounded">
-              Verified Competitor
+              Verified Competitions & Research
             </span>
           </div>
 
-          {participation.map(item => (
-            <div key={item.id} className="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
-              <div className="md:col-span-8 space-y-1">
-                <div className="flex items-center space-x-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-navy-400" />
-                  <h4 className="text-sm font-semibold text-navy-950">
-                    {item.competition}
-                  </h4>
-                  <span className="text-xs font-mono text-navy-500">({item.year})</span>
+          <div className="space-y-6 divide-y divide-canvas-border">
+            {participation.map((item, idx) => (
+              <div key={item.id} className={`grid grid-cols-1 md:grid-cols-12 gap-4 items-start ${idx > 0 ? 'pt-6' : ''}`}>
+                <div className="md:col-span-8 space-y-1">
+                  <div className="flex items-center space-x-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-navy-400" />
+                    <h4 className="text-sm font-semibold text-navy-950">
+                      {item.competition}
+                    </h4>
+                    <span className="text-xs font-mono text-navy-500">({item.year})</span>
+                  </div>
+                  <p className="text-xs text-bronze-700 font-medium pl-3.5">
+                    Host: {item.institution} &middot; <span className="font-semibold text-navy-800">{item.rankLabel}</span>
+                  </p>
+                  <p className="text-xs text-navy-600 pl-3.5 leading-relaxed pt-1">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="text-xs text-bronze-700 font-medium pl-3.5">
-                  Host: {item.institution}
-                </p>
-                <p className="text-xs text-navy-600 pl-3.5 leading-relaxed pt-1">
-                  {item.description}
-                </p>
-              </div>
 
-              <div className="md:col-span-4 flex md:justify-end flex-wrap gap-1.5 pl-3.5 md:pl-0">
-                {item.tags.map(tag => (
-                  <span
-                    key={tag}
-                    className="px-2 py-0.5 rounded bg-canvas-muted text-[11px] font-medium text-navy-600 border border-canvas-border"
-                  >
-                    {tag}
-                  </span>
-                ))}
+                <div className="md:col-span-4 flex md:justify-end flex-wrap gap-1.5 pl-3.5 md:pl-0">
+                  {item.tags.map(tag => (
+                    <span
+                      key={tag}
+                      className="px-2 py-0.5 rounded bg-canvas-muted text-[11px] font-medium text-navy-600 border border-canvas-border"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
       </div>

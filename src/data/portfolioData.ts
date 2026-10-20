@@ -3,7 +3,7 @@ import { InternshipExperience, Achievement, ResearchProject, LeadershipRole, Ski
 export const PERSONAL_INFO = {
   name: "Mohd Ahsan Siddiqui",
   title: "Third-year B.Sc. (Data Science) LL.B. Student",
-  institution: "National Law University Meghalaya",
+  institution: "National Law University of Meghalaya",
   academicPeriod: "2024–2029",
   gpa: "8.25/10",
   gpaPeriod: "End of Sixth Trimester",
@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   schoolClass12: "89.5% (AISSCE)",
   schoolClass10: "83.2% (ICSE)",
   headline: "Law, Technology & the Future of Digital Business.",
-  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
+  shortBio: "Third-year B.Sc. (Data Science) LL.B. student at National Law University of Meghalaya, exploring the intersection of law, technology, and business. I actively work on developing legal tech tools, with core interests spanning intellectual property, technology law, data privacy, corporate and commercial law, legal research, and AI-assisted development.",
   email: "ahsan@nlumeg.ac.in",
   phone: "+91 95806 30047",
   phoneRaw: "+919580630047",
@@ -23,7 +23,7 @@ export const PERSONAL_INFO = {
 export const CREDIBILITY_ITEMS = [
   {
     label: "Education",
-    value: "National Law University Meghalaya",
+    value: "National Law University of Meghalaya",
     detail: "B.Sc. (Data Science) LL.B. (2024–2029)"
   },
   {
@@ -39,13 +39,13 @@ export const CREDIBILITY_ITEMS = [
   {
     label: "Advocacy & Research",
     value: "2nd Position Intra Moot",
-    detail: "National Law University Meghalaya"
+    detail: "National Law University of Meghalaya"
   }
 ];
 
 export const ABOUT_PARAGRAPHS = [
   "I am a third-year law student with an enduring curiosity for exploring the evolving frontiers of legal systems. While I am particularly drawn to Intellectual Property, Technology Law, Data Privacy, and Corporate Law, I believe that high-calibre legal thinking requires an interdisciplinary mindset that refuses to be confined to silos.",
-  "Pursuing a dual B.Sc. (Data Science) LL.B. degree at National Law University Meghalaya enables me to combine rigorous legal doctrine with quantitative fluency. I enjoy learning through hands-on legal research, deep institutional discourse, practical chamber and transactional internships, and thoughtful experimentation with modern AI-assisted workflows.",
+  "Pursuing a dual B.Sc. (Data Science) LL.B. degree at National Law University of Meghalaya enables me to combine rigorous legal doctrine with quantitative fluency. I enjoy learning through hands-on legal research, deep institutional discourse, practical chamber and transactional internships, and thoughtful experimentation with modern AI-assisted workflows.",
   "For me, efficiency and adaptability go hand in hand with professional growth. Whether conducting due diligence for corporate restructurings, cross-border trademark clearance under the UK Trade Marks Act, auditing large-scale litigation dockets, or assisting ongoing research at IIT Guwahati, my focus remains constant: delivering thorough, principled work that bridges technology and the law."
 ];
 
@@ -59,12 +59,28 @@ export const INTERNSHIPS: InternshipExperience[] = [
     isIncoming: true,
     category: "corporate",
     categoryLabel: "Corporate & Tier-1 Practice",
-    summary: "Selected for an upcoming internship at one of India's preeminent full-service law firms.",
+    summary: "Selected for an upcoming corporate internship at one of India's preeminent full-service law firms.",
     responsibilities: [
       "Scheduled to join the firm's New Delhi office for an intensive corporate and commercial legal internship.",
       "Will support partners and associates in transactional advisory, statutory compliance, and corporate legal research."
     ],
     skills: ["Corporate Law", "Commercial Advisory", "Due Diligence", "Legal Research"]
+  },
+  {
+    id: "remfry-sagar-2027",
+    organization: "Remfry & Sagar",
+    role: "Incoming Intern – Patents Department",
+    location: "Gurugram / New Delhi NCR",
+    date: "January 2027",
+    isIncoming: true,
+    category: "tech-ip",
+    categoryLabel: "Patent Law & Prosecution",
+    summary: "Selected for an upcoming internship with the Patents Department at Remfry & Sagar, one of India's premier full-service intellectual property law firms.",
+    responsibilities: [
+      "Scheduled to join the firm's Patents Department at Remfry House, focusing on patent prosecution, prior art searches, and patentability assessments.",
+      "Will assist patent attorneys in patent analysis, claim interpretation, statutory requirements under the Indian Patents Act, and international PCT filing frameworks."
+    ],
+    skills: ["Patent Law", "Patent Prosecution", "Prior Art Searches", "Indian Patents Act", "PCT Procedures", "Patent Landscaping"]
   },
   {
     id: "solvlegal-2026",
@@ -152,13 +168,25 @@ export const ACHIEVEMENTS: Achievement[] = [
     id: "intra-moot-2026",
     title: "Second Position (Runners-Up)",
     competition: "2nd Intra Moot Court Competition, 2026",
-    institution: "National Law University Meghalaya",
+    institution: "National Law University of Meghalaya",
     year: "2026",
     rank: "podium",
     rankLabel: "University 2nd Position",
     projectOrMatter: "Constitutional Law, Election Laws & Fundamental Rights",
     description: "Secured second place in the premier university moot court competition. Drafted comprehensive appellate memorials for both sides (Petitioners and Respondents) addressing complex constitutional and election law disputes centered on fundamental rights. Prepared exhaustive judicial compendiums and case law authorities, and actively prepared and briefed team oralists on argumentation strategy, statutory rebuttals, and bench queries.",
     tags: ["Both-Side Memorials (Petitioner & Respondent)", "Constitutional Law", "Election Laws", "Oralist Briefing & Strategy", "Judicial Compendiums", "Fundamental Rights"]
+  },
+  {
+    id: "nuals-moot-2026",
+    title: "Researcher",
+    competition: "The NUALS Moot 2026 – Third Edition",
+    institution: "NUALS Moot Court Society (National University of Advanced Legal Studies, Kochi)",
+    year: "2026",
+    rank: "participant",
+    rankLabel: "National Moot Researcher",
+    projectOrMatter: "International Taxation & Corporate Law — International Tax Treaty Protection & Anti-Avoidance Law in Kerenia",
+    description: "Served as Researcher in The NUALS Moot 2026 – Third Edition, a national-level moot court competition organized by the NUALS Moot Court Society on international taxation and corporate law, focusing on international tax treaty protection and anti-avoidance law in the fictional jurisdiction of Kerenia.",
+    tags: ["Researcher", "The NUALS Moot 2026", "International Taxation", "Corporate Law", "Tax Treaty Protection", "Anti-Avoidance Law", "Jurisdiction of Kerenia"]
   },
   {
     id: "ambedkar-moot-2026",
@@ -169,7 +197,7 @@ export const ACHIEVEMENTS: Achievement[] = [
     rank: "participant",
     rankLabel: "National Moot Participant",
     projectOrMatter: "Constitutional & Fundamental Rights Advocacy",
-    description: "Represented National Law University Meghalaya in a competitive national-level moot court focused on constitutional law, administrative discretion, and fundamental rights jurisprudence.",
+    description: "Represented National Law University of Meghalaya in a competitive national-level moot court focused on constitutional law, administrative discretion, and fundamental rights jurisprudence.",
     tags: ["Constitutional Law", "Fundamental Rights", "Memorial Drafting", "National Moot"]
   }
 ];
@@ -218,7 +246,7 @@ export const LEADERSHIP_ROLES: LeadershipRole[] = [
     id: "legal-aid-vp",
     position: "Vice President",
     organization: "Legal Aid Society",
-    institution: "National Law University Meghalaya",
+    institution: "National Law University of Meghalaya",
     period: "August 2025–July 2026",
     highlights: [
       "Organized and coordinated an academic seminar on 'Domestic Violence in a Matrimonial Context', directing speaker outreach, institutional protocols, and participant engagement.",
@@ -230,7 +258,7 @@ export const LEADERSHIP_ROLES: LeadershipRole[] = [
     id: "moot-outreach-cohead",
     position: "Outreach Relations Co-head",
     organization: "Moot Court Society",
-    institution: "National Law University Meghalaya",
+    institution: "National Law University of Meghalaya",
     period: "August 2024–July 2025",
     highlights: [
       "Directed inter-institutional communication, competition outreach, and promotional campaigns for university mooting events.",
@@ -241,7 +269,7 @@ export const LEADERSHIP_ROLES: LeadershipRole[] = [
     id: "idia-core-committee",
     position: "Core Committee Member",
     organization: "IDIA (Increasing Diversity by Increasing Access) — Meghalaya Chapter",
-    institution: "IDIA Chapter, NLU Meghalaya",
+    institution: "IDIA Chapter, National Law University of Meghalaya",
     period: "July 2026–Present",
     highlights: [
       "Coordinating systematic outreach to secondary schools and marginalized communities across the state to identify prospective law students from underrepresented backgrounds.",

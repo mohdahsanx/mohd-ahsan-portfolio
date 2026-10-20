@@ -52,7 +52,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
                 Curriculum Vitae &middot; Mohd Ahsan Siddiqui
               </h3>
               <p className="text-[11px] text-navy-600">
-                B.Sc. (Data Science) LL.B. &middot; National Law University Meghalaya
+                B.Sc. (Data Science) LL.B. &middot; National Law University of Meghalaya
               </p>
             </div>
           </div>
@@ -170,6 +170,14 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
                   </div>
                 </div>
 
+                {/* Remfry & Sagar */}
+                <div>
+                  <div className="flex justify-between font-semibold text-navy-950">
+                    <span>&bull; Incoming Intern, Remfry &amp; Sagar (Patents Department), Gurugram / Delhi NCR</span>
+                    <span className="font-mono text-navy-600">(January 2027)</span>
+                  </div>
+                </div>
+
                 {/* SolvLegal */}
                 <div>
                   <div className="flex justify-between font-semibold text-navy-950">
@@ -241,6 +249,9 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
                   <strong>Secured 2nd Position</strong> in the <strong>4th GNLU LEGISLATIVE DRAFTING Competition, 2025</strong>, <em>The Whistleblower and Witness Protection Act, 2025</em>.
                 </li>
                 <li>
+                  <strong>Researcher</strong> in <strong>The NUALS Moot 2026 – Third Edition</strong>, a national-level moot court competition organized by the NUALS Moot Court Society on international taxation and corporate law, focusing on international tax treaty protection and anti-avoidance law in the fictional jurisdiction of Kerenia.
+                </li>
+                <li>
                   <strong>Participated</strong> in the <strong>2nd Dr. B.R. Ambedkar Memorial Moot Court Competition, 2026</strong>, University of Science &amp; Technology Meghalaya (USTM).
                 </li>
               </ul>
@@ -276,7 +287,7 @@ export const CvModal: React.FC<CvModalProps> = ({ isOpen, onClose }) => {
               <div className="space-y-3 pt-1 text-xs">
                 <div>
                   <div className="flex justify-between font-semibold text-navy-950">
-                    <span>&bull; Vice President, Legal Aid Society; National Law University Meghalaya</span>
+                    <span>&bull; Vice President, Legal Aid Society; National Law University of Meghalaya</span>
                     <span className="font-mono text-navy-600">(August 2025–July 2026)</span>
                   </div>
                   <ul className="pl-5 space-y-0.5 text-navy-700 list-disc mt-1">
